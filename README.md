@@ -1,23 +1,39 @@
 ## Cadito
 
-Desarrollen el backend para un clon de Amazon/MercadoLibre.
+Frontend and backend for a E-commerce website developed by Camilo Galezo for a university project.
 
-La API debe satisfacer cada endpoint que está utilizando el frontend, de manera que el frontend funcione completamente. La API debe crearse como repositorio en Github y debe ser "entregada" al profesor utilizando el enlace, donde se enviará unicamente el link al repositorio. El proyecto se desarrolla de manera individual, con fecha de entrega 30 de Abril.
+The endpoints include:
+- [x] Login with user and password.
+- [x] Login with token.
+- [x] Sign up.
+- [x] Get user.
+- [x] Get posts from a user.
+- [x] Get recents posts.
+- [x] Get indivual post.
+- [x] Create post.
+- [x] Get products in cart.
+- [x] Add produts to cart.
+- [x] Delete products in cart.
+- [x] Buy cart.
+- [x] Get shopping history.
+- [x] Add reviews to a post.
+- [x] Get reviews from post.
 
-Los endpoints a desarrollar incluyen, pero no están limitados a:
-- [ ] Login con usuario y contraseña.
-- [ ] Login con token. (El "token" siendo el _id de un user)
-- [ ] Registro de usuario.
-- [ ] Get usuario
-- [ ] Get publicaciones de un usuario
-- [ ] Get publicaciones recientes
-- [ ] Get publicacion individual
-- [ ] Crear publicacion
-- [ ] Get publicaciones en carrito
-- [ ] Agregar publicacion a carrito
-- [ ] Eliminar publicacion de carrito
-- [ ] "Comprar" carrito
-- [ ] Get historial de compras
-- [ ] Crear review para publicacion
-- [ ] Get reviews de una publicacion
+### Database connection
 
+In the `back` directory
+
+```
+cd ./back
+```
+Create a dotenv environment variables file (.env)
+
+```
+touch .env
+```
+Add a `DATABASE_ACCESS` with your connection string, for example:
+
+```
+DATABASE_ACCESS = "mongodb+srv://<username>:<password>@cluster0.uigzg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+```
